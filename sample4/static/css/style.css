@@ -1,0 +1,161 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.site-header {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    font-size: 28px;
+}
+
+.site-main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.site-footer {
+    background-color: #27ae60;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* 课程列表 */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+}
+
+.course-card-cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-card-title {
+    font-size: 18px;
+    padding: 12px 15px 0;
+    color: #e67e22;
+}
+
+.course-card-instructor {
+    padding: 5px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.course-card-price {
+    padding: 5px 15px 12px;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.course-card a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-card a:hover {
+    background-color: #d35400;
+}
+
+/* 课程详情 */
+.course-body {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-body h2 {
+    color: #e67e22;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.course-body p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.course-description {
+    line-height: 1.8;
+    color: #555;
+    margin-top: 15px;
+}
+
+.btn-course {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn-course:hover {
+    background-color: #219a52;
+}
+
+/* 错误页面 */
+.error-page {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.error-page h2 {
+    color: #e67e22;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.error-page a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}

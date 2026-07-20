@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{% if course %}{{ course.title }} - 在线学习平台{% else %}页面未找到{% endif %}{% endblock %}
+{% block content %}
+{% if course %}
+<div class="course-body">
+    <h2>{{ course.title }}</h2>
+    <p class="course-instructor">讲师: {{ course.instructor }}</p>
+    <p class="course-duration">时长: {{ course.duration }} 小时</p>
+    <p class="course-category">分类: {{ course.category }}</p>
+    <p class="course-price">价格: ¥{{ "%.2f"|format(course.price) }}</p>
+    <p class="course-description">{{ course.description }}</p>
+    <a class="btn-course" href="/">返回课程列表</a>
+</div>
+{% else %}
+<div class="error-page">
+    <h2>404 - 课程未找到</h2>
+    <p>抱歉，您访问的课程不存在。</p>
+    <a href="/">返回课程列表</a>
+</div>
+{% endif %}
+{% endblock %}

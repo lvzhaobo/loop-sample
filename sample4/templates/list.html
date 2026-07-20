@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}课程列表 - 在线学习平台{% endblock %}
+{% block content %}
+<div class="course-list">
+    {% for course in courses %}
+    <div class="course-card">
+        <img class="course-card-cover" src="{{ course.cover }}" alt="{{ course.title }}">
+        <h2 class="course-card-title">{{ course.title }}</h2>
+        <p class="course-card-instructor">讲师: {{ course.instructor }}</p>
+        <p class="course-card-price">价格: ¥{{ "%.2f"|format(course.price) }}</p>
+        <a href="/course/{{ course.id }}">查看详情</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
