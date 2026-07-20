@@ -1,9 +1,15 @@
 {% extends "base.html" %}
-{% block body %}
-<h1 class="detail-title">{{ item.title }}</h1>
-<div class="meta">#{{ item.id }}</div>
-<img class="main-img" src="{{ url_for('static', filename='img/' ~ item.id ~ '.png') }}" alt="">
-<button class="btn-enroll">btn-enroll</button>
-<div class="course-outline">{{ item.content }}</div>
-<a class="back" href="/">返回列表</a>
+{% block title %}{{ course.title }} - 在线学习平台{% endblock %}
+{% block content %}
+    <div class="detail-header">
+        <img class="detail-cover" src="{{ url_for('static', filename='img/' + course.id|string + '.png') }}" alt="{{ course.title }}">
+        <h1 class="detail-title">{{ course.title }}</h1>
+        <p class="detail-meta">{{ course.teacher }} · {{ course.level }} · {{ course.duration }}分钟</p>
+        <button class="btn-enroll">立即报名</button>
+    </div>
+    <div class="course-outline">
+        <h2>课程大纲</h2>
+        <p>{{ course.content }}</p>
+    </div>
+    <a href="/" class="back-link">返回课程列表</a>
 {% endblock %}
