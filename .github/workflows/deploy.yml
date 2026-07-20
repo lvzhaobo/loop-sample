@@ -1,0 +1,69 @@
+# loop-sample 自动部署到 ECS(拉取式)
+#
+# 存放位置(仓库根):.github/workflows/deploy.yml
+# 触发:sample1/ 变更推到 main(含 PR 合并) 或手动触发。
+# 认证:ECS SSH 密码,存为仓库 Secrets(见下)。仓库为公开仓,ECS 侧 git 拉取无需 token。
+#
+# 需在 GitHub 仓库 Settings → Secrets and variables → Actions 添加:
+#   ECS_HOST          例:47.76.211.100
+#   ECS_SSH_USER      例:root
+#   ECS_SSH_PORT      例:22
+#   ECS_SSH_PASSWORD  ECS 登录密码
+#
+# 与本地 delivery-loop 的部署互不影响:两者都是"拉取式 + app.pid 隔离",幂等可共存。
+name: Deploy sample1 to ECS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sample1/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-ecs-sample1
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull-style deploy over SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.ECS_HOST }}
+          username: ${{ secrets.ECS_SSH_USER }}
+          password: ${{ secrets.ECS_SSH_PASSWORD }}
+          port: ${{ secrets.ECS_SSH_PORT }}
+          command_timeout: 5m
+          script_stop: true
+          script: |
+            set -e
+            BASE=~/apps
+            REPO=loop-sample
+            BRANCH=main
+            SUBDIR=sample1
+            APP_PORT=1001
+            URL="https://github.com/${{ github.repository }}.git"
+            mkdir -p "$BASE" && cd "$BASE"
+            if [ -d "$REPO/.git" ]; then
+              cd "$REPO"
+              git -c http.version=HTTP/1.1 remote set-url origin "$URL"
+              git -c http.version=HTTP/1.1 fetch -q origin "$BRANCH"
+              git -c http.version=HTTP/1.1 reset -q --hard "origin/$BRANCH"
+            else
+              git -c http.version=HTTP/1.1 clone -q -b "$BRANCH" "$URL" "$REPO"
+              cd "$REPO"
+            fi
+            cd "$SUBDIR"
+            python3 -m pip install -q -r requirements.txt || pip3 install -q -r requirements.txt
+            if [ -f app.pid ]; then kill "$(cat app.pid)" 2>/dev/null || true; sleep 1; fi
+            PORT="$APP_PORT" setsid nohup python3 app.py > app.log 2>&1 &
+            echo $! > app.pid
+            sleep 2
+            if kill -0 "$(cat app.pid)" 2>/dev/null; then
+              echo "DEPLOY_OK pid=$(cat app.pid) port=$APP_PORT"
+            else
+              echo "DEPLOY_FAIL"; tail -n 20 app.log; exit 1
+            fi
