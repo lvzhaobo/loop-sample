@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<header class="topbar"><h1 class="site-title">在线学习平台:课程列表 + 详情</h1></header>
+<main class="list">
+{% for item in items %}
+  <article class="course-card">
+    <img class="course-cover" src="{{ url_for('static', filename='img/' ~ item.id ~ '.png') }}" alt="">
+    <h3 class="course-title"><a href="/course/{{ item.id }}">{{ item.title }}</a></h3>
+    <div class="course-meta">#{{ item.id }}</div>
+    <p class="course-summary">{{ item.summary }}</p>
+  </article>
+{% endfor %}
+</main>
+{% endblock %}

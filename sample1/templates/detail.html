@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+<h1 class="detail-title">{{ item.title }}</h1>
+<div class="meta">#{{ item.id }}</div>
+<img class="main-img" src="{{ url_for('static', filename='img/' ~ item.id ~ '.png') }}" alt="">
+<button class="btn-enroll">btn-enroll</button>
+<div class="course-outline">{{ item.content }}</div>
+<a class="back" href="/">返回列表</a>
+{% endblock %}
