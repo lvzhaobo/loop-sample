@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}课程列表 - 在线学习平台{% endblock %}
+{% block content %}
+<div class="course-list">
+    {% for course in courses %}
+    <a href="/course/{{ course.id }}" class="course-card">
+        <img class="course-cover" src="{{ url_for('static', filename='img/' + course.id|string + '.png') }}" alt="{{ course.title }}">
+        <h2 class="course-title">{{ course.title }}</h2>
+        <div class="course-meta">{{ course.teacher }} · {{ course.level }} · {{ course.duration }}分钟</div>
+        <p class="course-summary">{{ course.summary }}</p>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{% if course %}{{ course.title }} - 在线学习平台{% else %}页面未找到{% endif %}{% endblock %}
+{% block content %}
+{% if course %}
+<div class="course-detail">
+    <img class="course-cover" src="{{ url_for('static', filename='img/' + course.id|string + '.png') }}" alt="{{ course.title }}">
+    <h1 class="course-title">{{ course.title }}</h1>
+    <div class="course-meta">{{ course.teacher }} · {{ course.level }} · {{ course.duration }}分钟</div>
+    <button class="btn-enroll">立即报名</button>
+    <div class="course-outline">{{ course.content }}</div>
+    <a href="/" class="back-link">← 返回课程列表</a>
+</div>
+{% else %}
+<div class="error-page">
+    <h1>404 - 课程未找到</h1>
+    <p>抱歉，您访问的课程不存在。</p>
+    <a href="/" class="back-link">← 返回课程列表</a>
+</div>
+{% endif %}
+{% endblock %}
