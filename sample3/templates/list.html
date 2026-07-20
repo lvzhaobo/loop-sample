@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="course-list">
+    {% for course in courses %}
+    <div class="course-card">
+        <div class="course-card-image">
+            {% if course.cover_image %}
+            <img src="{{ course.cover_image }}" alt="{{ course.title }}">
+            {% else %}
+            <div class="placeholder-image">暂无图片</div>
+            {% endif %}
+        </div>
+        <h2 class="course-card-title">{{ course.title }}</h2>
+        <p class="course-card-instructor">讲师：{{ course.instructor }}</p>
+        <p class="course-card-price">价格：¥{{ "%.2f"|format(course.price) if course.price is not none else '免费' }}</p>
+        <a href="/course/{{ course.id }}" class="btn-detail">查看详情</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Python 编程入门",
+        "description": "本课程将带你从零开始学习 Python 编程语言，涵盖基础语法、数据类型、控制流程、函数定义、模块使用等核心内容。通过大量实战练习，帮助你快速掌握 Python 编程技能，为后续深入学习打下坚实基础。课程适合编程初学者和希望系统学习 Python 的开发者。",
+        "cover_image": "/static/img/course1.jpg",
+        "instructor": "张老师",
+        "duration": 20,
+        "category": "编程开发",
+        "price": 199.00
+    },
+    {
+        "id": 2,
+        "title": "数据结构与算法",
+        "description": "深入学习常见数据结构和经典算法，包括数组、链表、栈、队列、树、图等数据结构，以及排序、搜索、动态规划等算法。通过理论讲解和代码实现相结合的方式，培养你的算法思维和问题解决能力。课程包含大量 LeetCode 真题解析，助力面试准备。",
+        "cover_image": "/static/img/course2.jpg",
+        "instructor": "李教授",
+        "duration": 30,
+        "category": "计算机科学",
+        "price": 299.00
+    },
+    {
+        "id": 3,
+        "title": "Web 前端开发实战",
+        "description": "系统学习现代 Web 前端开发技术栈，从 HTML5、CSS3 基础到 JavaScript 高级编程，再到 React 框架实战。课程涵盖响应式设计、前端工程化、性能优化等核心主题。通过构建完整的电商项目，让你掌握企业级前端开发的全流程。",
+        "cover_image": "/static/img/course3.jpg",
+        "instructor": "王老师",
+        "duration": 40,
+        "category": "前端开发",
+        "price": 399.00
+    },
+    {
+        "id": 4,
+        "title": "机器学习基础",
+        "description": "从零开始学习机器学习核心概念和经典算法，包括线性回归、逻辑回归、决策树、支持向量机、聚类分析等。使用 Python 和 scikit-learn 库进行实践，通过真实数据集训练模型。课程还介绍深度学习入门知识，为进阶学习做好准备。",
+        "cover_image": "/static/img/course4.jpg",
+        "instructor": "赵博士",
+        "duration": 35,
+        "category": "人工智能",
+        "price": 499.00
+    },
+    {
+        "id": 5,
+        "title": "数据库系统原理",
+        "description": "全面学习数据库系统的基础理论和实践技能，包括关系数据库设计、SQL 语言、事务管理、索引优化、查询性能调优等内容。课程涵盖 MySQL 和 PostgreSQL 两种主流数据库，通过实际项目案例讲解数据库设计的最佳实践和常见问题解决方案。",
+        "cover_image": "/static/img/course5.jpg",
+        "instructor": "陈老师",
+        "duration": 25,
+        "category": "数据库",
+        "price": 249.00
+    },
+    {
+        "id": 6,
+        "title": "Linux 系统管理",
+        "description": "从 Linux 系统安装开始，逐步学习文件系统管理、用户权限控制、进程管理、网络配置、Shell 脚本编程等核心技能。课程涵盖服务器部署、安全加固、日志分析等运维实践。通过模拟真实生产环境，培养你独立管理 Linux 服务器的能力。",
+        "cover_image": "/static/img/course6.jpg",
+        "instructor": "刘老师",
+        "duration": 28,
+        "category": "系统运维",
+        "price": 279.00
+    },
+    {
+        "id": 7,
+        "title": "软件工程实践",
+        "description": "系统学习软件工程的核心方法论和实践技能，包括需求分析、系统设计、版本控制、测试驱动开发、持续集成等。课程采用敏捷开发模式，通过团队项目实战，让你体验完整的软件开发流程。涵盖 UML 建模、设计模式、代码重构等高级主题。",
+        "cover_image": "/static/img/course7.jpg",
+        "instructor": "周老师",
+        "duration": 32,
+        "category": "软件工程",
+        "price": 349.00
+    },
+    {
+        "id": 8,
+        "title": "网络安全入门",
+        "description": "从网络安全基础概念出发，学习常见的网络攻击与防御技术，包括 Web 安全、密码学基础、网络协议安全、渗透测试等。课程通过实验环境进行实战演练，让你理解黑客攻击原理并掌握相应的防护措施。适合对网络安全感兴趣的初学者。",
+        "cover_image": "/static/img/course8.jpg",
+        "instructor": "吴老师",
+        "duration": 22,
+        "category": "网络安全",
+        "price": 229.00
+    }
+]

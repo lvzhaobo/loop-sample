@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="course-detail">
+    <div class="course-detail-header">
+        <h1>{{ course.title }}</h1>
+        <p class="course-detail-instructor">讲师：{{ course.instructor }}</p>
+        <p class="course-detail-category">分类：{{ course.category }}</p>
+        <p class="course-detail-duration">时长：{{ course.duration }} 小时</p>
+        <p class="course-detail-price">价格：¥{{ "%.2f"|format(course.price) if course.price is not none else '免费' }}</p>
+    </div>
+    <div class="course-detail-body">
+        <h3>课程介绍</h3>
+        <p>{{ course.description }}</p>
+    </div>
+    <button class="btn-enroll">立即报名</button>
+    <a href="/" class="btn-back">返回列表</a>
+</div>
+{% endblock %}
