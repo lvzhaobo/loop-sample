@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% if tomato %}
+<div class="tomato-body">
+    <h2>{{ tomato.name }}</h2>
+    <p>工作时长: {{ tomato.duration }} 分钟</p>
+    <p>休息时长: {{ tomato.break_duration }} 分钟</p>
+    <p>颜色: <span style="color: {{ tomato.color }};">{{ tomato.color }}</span></p>
+    <p>描述: {{ tomato.description }}</p>
+    <p>创建时间: {{ tomato.created_at }}</p>
+    <p>状态: {{ tomato.status }}</p>
+    <a href="/" class="btn-tomato">返回列表</a>
+</div>
+{% else %}
+<div class="tomato-body">
+    <h2>番茄时钟未找到</h2>
+    <p>抱歉，您访问的番茄时钟不存在。</p>
+    <a href="/" class="btn-tomato">返回列表</a>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="tomato-list">
+    {% for tomato in tomatoes %}
+    <div class="tomato-card">
+        <img class="tomato-card-image" src="{{ tomato.image }}" alt="{{ tomato.name }}" onerror="this.src='{{ url_for('static', filename='img/placeholder.png') }}'">
+        <h2 class="tomato-card-name">{{ tomato.name }}</h2>
+        <p class="tomato-card-duration">工作时长: {{ tomato.duration }} 分钟</p>
+        <p class="tomato-card-status">状态: {{ tomato.status }}</p>
+        <a href="/tomato/{{ tomato.id }}">查看详情</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

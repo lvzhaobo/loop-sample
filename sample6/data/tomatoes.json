@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "专注番茄",
+        "duration": 25,
+        "break_duration": 5,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "这是一个经典的番茄时钟，适合日常专注工作使用，帮助提高效率。",
+        "created_at": "2026-07-21T10:00:00",
+        "status": "active"
+    },
+    {
+        "id": 2,
+        "name": "深度工作番茄",
+        "duration": 50,
+        "break_duration": 10,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "适合需要长时间专注的任务，比如编程或写作，效果非常显著。",
+        "created_at": "2026-07-21T10:05:00",
+        "status": "active"
+    },
+    {
+        "id": 3,
+        "name": "短休息番茄",
+        "duration": 15,
+        "break_duration": 3,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "快速完成任务的小番茄，适合碎片化时间管理，非常灵活方便。",
+        "created_at": "2026-07-21T10:10:00",
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "name": "学习番茄",
+        "duration": 30,
+        "break_duration": 7,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "专为学习设计，平衡专注与休息，让学习更高效更持久。",
+        "created_at": "2026-07-21T10:15:00",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "name": "运动番茄",
+        "duration": 20,
+        "break_duration": 5,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "结合运动与休息的番茄时钟，适合健身或拉伸活动使用。",
+        "created_at": "2026-07-21T10:20:00",
+        "status": "active"
+    },
+    {
+        "id": 6,
+        "name": "阅读番茄",
+        "duration": 35,
+        "break_duration": 8,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "沉浸式阅读的番茄时钟，帮助养成每日阅读习惯，提升知识储备。",
+        "created_at": "2026-07-21T10:25:00",
+        "status": "active"
+    },
+    {
+        "id": 7,
+        "name": "冥想番茄",
+        "duration": 10,
+        "break_duration": 2,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "短时间冥想练习，放松身心，适合工作间隙使用，效果很好。",
+        "created_at": "2026-07-21T10:30:00",
+        "status": "active"
+    },
+    {
+        "id": 8,
+        "name": "创意番茄",
+        "duration": 40,
+        "break_duration": 10,
+        "color": "#e74c3c",
+        "image": "/static/img/placeholder.png",
+        "description": "激发创意的番茄时钟，适合头脑风暴或艺术创作，灵感不断。",
+        "created_at": "2026-07-21T10:35:00",
+        "status": "active"
+    }
+]
