@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "专注番茄",
+        "work_duration": 25,
+        "break_duration": 5,
+        "cycles": 4,
+        "color": "#e74c3c",
+        "image": "tomato1.png",
+        "description": "经典番茄工作法，25分钟专注工作，5分钟休息，循环4次。",
+        "created_at": "2026-07-21 10:00:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 2,
+        "name": "学习番茄",
+        "work_duration": 30,
+        "break_duration": 10,
+        "cycles": 3,
+        "color": "#e67e22",
+        "image": "tomato2.png",
+        "description": "适合学习场景，30分钟专注学习，10分钟休息，循环3次。",
+        "created_at": "2026-07-21 10:05:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 3,
+        "name": "工作番茄",
+        "work_duration": 45,
+        "break_duration": 15,
+        "cycles": 2,
+        "color": "#27ae60",
+        "image": "tomato3.png",
+        "description": "适合高强度工作，45分钟专注工作，15分钟休息，循环2次。",
+        "created_at": "2026-07-21 10:10:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 4,
+        "name": "创意番茄",
+        "work_duration": 20,
+        "break_duration": 5,
+        "cycles": 6,
+        "color": "#8e44ad",
+        "image": "tomato4.png",
+        "description": "适合创意工作，20分钟专注创作，5分钟休息，循环6次。",
+        "created_at": "2026-07-21 10:15:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 5,
+        "name": "阅读番茄",
+        "work_duration": 35,
+        "break_duration": 10,
+        "cycles": 3,
+        "color": "#2980b9",
+        "image": "tomato5.png",
+        "description": "适合阅读场景，35分钟专注阅读，10分钟休息，循环3次。",
+        "created_at": "2026-07-21 10:20:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 6,
+        "name": "运动番茄",
+        "work_duration": 15,
+        "break_duration": 5,
+        "cycles": 8,
+        "color": "#f39c12",
+        "image": "tomato6.png",
+        "description": "适合运动训练，15分钟高强度运动，5分钟休息，循环8次。",
+        "created_at": "2026-07-21 10:25:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 7,
+        "name": "冥想番茄",
+        "work_duration": 10,
+        "break_duration": 2,
+        "cycles": 5,
+        "color": "#1abc9c",
+        "image": "tomato7.png",
+        "description": "适合冥想练习，10分钟专注冥想，2分钟休息，循环5次。",
+        "created_at": "2026-07-21 10:30:00",
+        "loop_text": "Loop-20260721"
+    },
+    {
+        "id": 8,
+        "name": "编程番茄",
+        "work_duration": 50,
+        "break_duration": 10,
+        "cycles": 2,
+        "color": "#2c3e50",
+        "image": "tomato8.png",
+        "description": "适合编程开发，50分钟专注编码，10分钟休息，循环2次。",
+        "created_at": "2026-07-21 10:35:00",
+        "loop_text": "Loop-20260721"
+    }
+]

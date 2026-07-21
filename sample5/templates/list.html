@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="tomato-list">
+    {% for tomato in tomatoes %}
+    <div class="tomato-card">
+        <div class="tomato-card-header">
+            <h2>{{ tomato.name }}</h2>
+        </div>
+        <div class="tomato-card-image">
+            {% if tomato.image %}
+            <img src="{{ url_for('static', filename='img/' + tomato.image) }}" alt="{{ tomato.name }}">
+            {% else %}
+            <div class="placeholder-image" style="background-color: {{ tomato.color }};"></div>
+            {% endif %}
+        </div>
+        <div class="tomato-card-body">
+            <p>工作时长: {{ tomato.work_duration }} 分钟</p>
+            <p>休息时长: {{ tomato.break_duration }} 分钟</p>
+            <p>循环次数: {{ tomato.cycles }}</p>
+            <p>循环文本: {{ tomato.loop_text }}</p>
+        </div>
+        <div class="tomato-card-footer">
+            <a href="/tomato/{{ tomato.id }}" class="btn-tomato">查看详情</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

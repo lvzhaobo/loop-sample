@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+{% if tomato %}
+<div class="tomato-detail">
+    <div class="tomato-detail-header">
+        <h2>{{ tomato.name }}</h2>
+        <span class="tomato-color" style="background-color: {{ tomato.color }};"></span>
+    </div>
+    <div class="tomato-detail-body">
+        <p><strong>工作时长:</strong> {{ tomato.work_duration }} 分钟</p>
+        <p><strong>休息时长:</strong> {{ tomato.break_duration }} 分钟</p>
+        <p><strong>循环次数:</strong> {{ tomato.cycles }}</p>
+        <p><strong>循环文本:</strong> {{ tomato.loop_text }}</p>
+        <p><strong>描述:</strong> {{ tomato.description }}</p>
+        <p><strong>创建时间:</strong> {{ tomato.created_at }}</p>
+        {% if tomato.image %}
+        <div class="tomato-detail-image">
+            <img src="{{ url_for('static', filename='img/' + tomato.image) }}" alt="{{ tomato.name }}">
+        </div>
+        {% endif %}
+    </div>
+    <div class="tomato-detail-footer">
+        <a href="/" class="btn-tomato">返回列表</a>
+    </div>
+</div>
+{% else %}
+<div class="not-found">
+    <h2>番茄时钟不存在</h2>
+    <p>抱歉，未找到该番茄时钟。</p>
+    <a href="/" class="btn-tomato">返回列表</a>
+</div>
+{% endif %}
+{% endblock %}

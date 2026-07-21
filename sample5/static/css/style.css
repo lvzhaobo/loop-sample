@@ -1,0 +1,193 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 页头 */
+.site-header {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.loop-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.site-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.site-header nav a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚 */
+.site-footer {
+    background-color: #e74c3c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* 列表页 */
+.tomato-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tomato-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tomato-card-header {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.tomato-card-header h2 {
+    font-size: 1.3em;
+}
+
+.tomato-card-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.tomato-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+}
+
+.tomato-card-body {
+    padding: 10px;
+}
+
+.tomato-card-body p {
+    margin-bottom: 5px;
+}
+
+.tomato-card-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+/* 详情页 */
+.tomato-detail {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tomato-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tomato-detail-header h2 {
+    font-size: 1.8em;
+}
+
+.tomato-color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.tomato-detail-body p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.tomato-detail-image {
+    margin-top: 15px;
+}
+
+.tomato-detail-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tomato-detail-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 按钮 */
+.btn-tomato {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-tomato:hover {
+    background-color: #c0392b;
+}
+
+/* 404 页面 */
+.not-found {
+    text-align: center;
+    padding: 50px;
+}
+
+.not-found h2 {
+    font-size: 2em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.not-found p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
