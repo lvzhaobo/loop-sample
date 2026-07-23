@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="detail-container">
+    <div class="sort-visual-body">
+        <h2>{{ visual.title }}</h2>
+        <p><strong>算法类型:</strong> {{ visual.algorithm_type }}</p>
+        <p><strong>数组大小:</strong> {{ visual.array_size }}</p>
+        <p><strong>排序速度:</strong> {{ visual.sort_speed }} ms</p>
+        <p><strong>状态:</strong> {{ visual.status }}</p>
+        <p><strong>描述:</strong> {{ visual.description }}</p>
+        {% if visual.cover_image %}
+        <img src="{{ visual.cover_image }}" alt="{{ visual.title }}">
+        {% endif %}
+        <button class="btn-sort" data-id="{{ visual.id }}">开始排序</button>
+    </div>
+    <a href="/">返回列表</a>
+</div>
+{% endblock %}

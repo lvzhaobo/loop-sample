@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "冒泡排序可视化",
+        "description": "冒泡排序是一种简单的排序算法，通过重复遍历列表，比较相邻元素并交换顺序错误的元素，直到整个列表有序。该算法的时间复杂度为O(n²)，适合小规模数据排序。",
+        "algorithm_type": "bubble",
+        "array_size": 15,
+        "sort_speed": 200,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 2,
+        "title": "快速排序可视化",
+        "description": "快速排序采用分治策略，选择一个基准元素将数组分为两部分，小于基准的放在左边，大于基准的放在右边，然后递归排序子数组。平均时间复杂度为O(n log n)。",
+        "algorithm_type": "quick",
+        "array_size": 20,
+        "sort_speed": 150,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 3,
+        "title": "归并排序可视化",
+        "description": "归并排序是稳定的排序算法，将数组递归分成两半，分别排序后再合并。时间复杂度始终为O(n log n)，但需要额外的O(n)空间。适合大规模数据排序场景。",
+        "algorithm_type": "merge",
+        "array_size": 25,
+        "sort_speed": 180,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "title": "插入排序可视化",
+        "description": "插入排序通过构建有序序列，对未排序数据在已排序序列中从后向前扫描，找到相应位置并插入。时间复杂度为O(n²)，但在小规模数据或基本有序时效率较高。",
+        "algorithm_type": "insertion",
+        "array_size": 12,
+        "sort_speed": 100,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "title": "选择排序可视化",
+        "description": "选择排序每次从未排序部分选出最小元素，放到已排序部分的末尾。时间复杂度为O(n²)，不占用额外内存空间，适合对内存使用有严格要求的场景。",
+        "algorithm_type": "selection",
+        "array_size": 18,
+        "sort_speed": 220,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 6,
+        "title": "堆排序可视化",
+        "description": "堆排序利用堆这种数据结构进行排序，首先构建最大堆，然后反复取出堆顶元素并调整堆。时间复杂度为O(n log n)，是一种不稳定的排序算法。",
+        "algorithm_type": "heap",
+        "array_size": 22,
+        "sort_speed": 160,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 7,
+        "title": "希尔排序可视化",
+        "description": "希尔排序是插入排序的改进版，通过将数组按一定间隔分组进行插入排序，逐步缩小间隔直到为1。时间复杂度介于O(n)和O(n²)之间，取决于间隔序列。",
+        "algorithm_type": "shell",
+        "array_size": 16,
+        "sort_speed": 190,
+        "cover_image": "",
+        "status": "active"
+    },
+    {
+        "id": 8,
+        "title": "计数排序可视化",
+        "description": "计数排序是一种非比较排序算法，通过统计每个元素出现的次数，然后根据计数信息将元素放到正确位置。时间复杂度为O(n+k)，适合整数排序且范围不大的场景。",
+        "algorithm_type": "counting",
+        "array_size": 30,
+        "sort_speed": 80,
+        "cover_image": "",
+        "status": "active"
+    }
+]

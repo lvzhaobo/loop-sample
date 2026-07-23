@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="list-container">
+    {% for visual in visuals %}
+    <div class="sort-card">
+        <div class="sort-card-image">
+            {% if visual.cover_image %}
+            <img src="{{ visual.cover_image }}" alt="{{ visual.title }}">
+            {% else %}
+            <div class="placeholder-image">暂无图片</div>
+            {% endif %}
+        </div>
+        <h2 class="sort-card-title">{{ visual.title }}</h2>
+        <p class="sort-card-type">类型: {{ visual.algorithm_type }}</p>
+        <p class="sort-card-speed">速度: {{ visual.sort_speed }} ms</p>
+        <a href="/sort_visual/{{ visual.id }}">查看详情</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
