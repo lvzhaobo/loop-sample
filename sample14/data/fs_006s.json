@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "暑假数学思维训练",
+        "grade": "四年级",
+        "date": "2025-07-05",
+        "description": "通过趣味数学游戏和逻辑推理题，培养孩子的数学思维能力，让学习变得生动有趣。课程涵盖数独、华容道等经典益智内容，全面提升逻辑分析能力。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "家中书房",
+        "type": "学习"
+    },
+    {
+        "id": 2,
+        "name": "游泳基础训练课",
+        "grade": "二年级",
+        "date": "2025-07-08",
+        "description": "专业教练指导的游泳基础课程，学习蛙泳和自由泳的基本动作，掌握水中呼吸技巧和安全知识。课程配备救生员全程监护，确保安全。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "市体育中心游泳馆",
+        "type": "游泳"
+    },
+    {
+        "id": 3,
+        "name": "户外足球友谊赛",
+        "grade": "四年级",
+        "date": "2025-07-12",
+        "description": "组织社区小朋友进行足球友谊赛，锻炼团队协作能力和运动技巧。比赛分为上下半场各20分钟，赛后进行技术点评和趣味互动。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "社区足球场",
+        "type": "踢球"
+    },
+    {
+        "id": 4,
+        "name": "羽毛球亲子活动",
+        "grade": "二年级",
+        "date": "2025-07-15",
+        "description": "家长与孩子共同参与的羽毛球活动，学习发球、接球基本动作，通过双打比赛增进亲子感情。活动提供专业羽毛球拍和场地。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "市体育馆羽毛球场",
+        "type": "羽毛球"
+    },
+    {
+        "id": 5,
+        "name": "语文阅读与写作营",
+        "grade": "四年级",
+        "date": "2025-07-18",
+        "description": "精选经典儿童文学作品，引导孩子深入阅读并学习写作技巧。每天安排阅读分享和写作练习，培养语言表达能力和想象力。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "市图书馆少儿阅览室",
+        "type": "学习"
+    },
+    {
+        "id": 6,
+        "name": "水上乐园欢乐游",
+        "grade": "二年级",
+        "date": "2025-07-22",
+        "description": "前往大型水上乐园游玩，体验各种水上游乐设施。包含造浪池、儿童水寨和漂流河等项目，让孩子在清凉中享受暑假乐趣。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "欢乐水世界",
+        "type": "游玩"
+    },
+    {
+        "id": 7,
+        "name": "英语自然拼读课",
+        "grade": "四年级",
+        "date": "2025-07-25",
+        "description": "系统学习英语自然拼读规则，通过歌曲、游戏和绘本阅读巩固发音技巧。课程涵盖26个字母发音和常见字母组合规律，为流利阅读打下基础。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "家中客厅",
+        "type": "学习"
+    },
+    {
+        "id": 8,
+        "name": "周末公园野餐游玩",
+        "grade": "二年级",
+        "date": "2025-07-28",
+        "description": "组织家庭公园野餐活动，准备丰富美食和户外游戏道具。孩子们可以在草地上奔跑玩耍，放风筝、踢毽子，享受大自然的美好时光。",
+        "image": "/static/img/placeholder.jpg",
+        "location": "城市中心公园",
+        "type": "游玩"
+    }
+]

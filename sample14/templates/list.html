@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}活动列表 - 沐然沐橦暑假生活学习平台{% endblock %}
+{% block content %}
+    <section class="list-section">
+        <h2>暑假活动列表</h2>
+        <div class="summer-cards">
+            {% for item in items %}
+            <div class="summer-card">
+                <div class="summer-card-image">
+                    {% if item.image %}
+                    <img src="{{ item.image }}" alt="{{ item.name }}">
+                    {% else %}
+                    <div class="placeholder-image">暂无图片</div>
+                    {% endif %}
+                </div>
+                <div class="summer-card-title">{{ item.name }}</div>
+                <div class="summer-card-date">{{ item.date }}</div>
+                <div class="summer-card-type">{{ item.type }}</div>
+                <a href="/fs_006/{{ item.id }}" class="summer-card-link">查看详情</a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

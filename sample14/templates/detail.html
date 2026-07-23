@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ item.name }} - 沐然沐橦暑假生活学习平台{% endblock %}
+{% block content %}
+    <section class="detail-section">
+        <a href="/" class="btn-back">返回列表</a>
+        <div class="summer-detail-body">
+            <h2>{{ item.name }}</h2>
+            <p><strong>年级：</strong>{{ item.grade }}</p>
+            <p><strong>日期：</strong>{{ item.date }}</p>
+            <p><strong>类型：</strong>{{ item.type }}</p>
+            {% if item.location %}
+            <p><strong>地点：</strong>{{ item.location }}</p>
+            {% endif %}
+            {% if item.image %}
+            <div class="detail-image">
+                <img src="{{ item.image }}" alt="{{ item.name }}">
+            </div>
+            {% endif %}
+            <div class="detail-description">
+                <h3>活动详情</h3>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
