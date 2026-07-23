@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ activity.title }} - 暑假快乐MumuLab{% endblock %}
+{% block content %}
+<div class="activity-detail">
+    <a href="/" class="btn-back">← 返回列表</a>
+    <div class="activity-detail-body">
+        <img class="activity-detail-img" src="{{ activity.image }}" alt="{{ activity.title }}">
+        <div class="activity-detail-info">
+            <h2 class="activity-detail-title">{{ activity.title }}</h2>
+            <p class="activity-detail-category">分类：{{ activity.category }}</p>
+            <p class="activity-detail-date">日期：{{ activity.date }}</p>
+            {% if activity.location %}
+            <p class="activity-detail-location">地点：{{ activity.location }}</p>
+            {% endif %}
+            <div class="activity-detail-description">
+                <h3>活动详情</h3>
+                <p>{{ activity.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

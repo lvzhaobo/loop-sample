@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "趣味科学实验营",
+        "description": "2026年暑假快乐！MumuLab为小朋友们准备了丰富多彩的科学实验活动，让我们一起探索科学的奥秘，动手做有趣的实验，培养科学思维和动手能力。",
+        "image": "https://picsum.photos/seed/science/400/300",
+        "date": "2026-07-15",
+        "location": "MumuLab科学教室A",
+        "category": "学习",
+        "color": "#ff6b6b"
+    },
+    {
+        "id": 2,
+        "title": "户外探险小分队",
+        "description": "2026年暑假快乐！加入MumuLab户外探险小分队，在大自然中学习生存技能，认识植物和昆虫，锻炼体魄和团队协作能力，度过一个难忘的暑假。",
+        "image": "https://picsum.photos/seed/adventure/400/300",
+        "date": "2026-07-20",
+        "location": "城市森林公园",
+        "category": "运动",
+        "color": "#4ecdc4"
+    },
+    {
+        "id": 3,
+        "title": "创意美术工作坊",
+        "description": "2026年暑假快乐！MumuLab创意美术工作坊邀请小朋友们发挥想象力，用画笔和颜料创造属于自己的艺术作品，培养审美能力和创造力。",
+        "image": "https://picsum.photos/seed/art/400/300",
+        "date": "2026-07-25",
+        "location": "MumuLab美术教室",
+        "category": "游玩",
+        "color": "#ff6b6b"
+    },
+    {
+        "id": 4,
+        "title": "小小厨师烘焙课",
+        "description": "2026年暑假快乐！MumuLab小小厨师烘焙课让小朋友们亲手制作美味的饼干和蛋糕，学习食材知识和烘焙技巧，享受劳动的快乐和美食的满足。",
+        "image": "https://picsum.photos/seed/cooking/400/300",
+        "date": "2026-08-01",
+        "location": "MumuLab烘焙厨房",
+        "category": "学习",
+        "color": "#4ecdc4"
+    },
+    {
+        "id": 5,
+        "title": "水上乐园狂欢日",
+        "description": "2026年暑假快乐！MumuLab组织水上乐园狂欢日活动，小朋友们可以在安全的水上设施中尽情玩耍，享受清凉的夏日时光，学习水上安全知识。",
+        "image": "https://picsum.photos/seed/water/400/300",
+        "date": "2026-08-05",
+        "location": "欢乐水上乐园",
+        "category": "游玩",
+        "color": "#ff6b6b"
+    },
+    {
+        "id": 6,
+        "title": "小小运动员训练营",
+        "description": "2026年暑假快乐！MumuLab小小运动员训练营提供专业的运动指导，包括跑步、跳远、球类等多项运动，帮助小朋友们增强体质，培养运动兴趣。",
+        "image": "https://picsum.photos/seed/sports/400/300",
+        "date": "2026-08-10",
+        "location": "MumuLab运动场",
+        "category": "运动",
+        "color": "#4ecdc4"
+    },
+    {
+        "id": 7,
+        "title": "自然探索夏令营",
+        "description": "2026年暑假快乐！MumuLab自然探索夏令营带领小朋友们走进大自然，观察植物生长，认识各种小动物，学习环保知识，培养对自然的热爱和保护意识。",
+        "image": "https://picsum.photos/seed/nature/400/300",
+        "date": "2026-08-15",
+        "location": "郊外自然营地",
+        "category": "学习",
+        "color": "#ff6b6b"
+    },
+    {
+        "id": 8,
+        "title": "音乐律动小课堂",
+        "description": "2026年暑假快乐！MumuLab音乐律动小课堂让小朋友们在音乐中感受节奏和旋律，学习简单的乐器演奏，培养音乐素养和艺术表现力，快乐学习音乐。",
+        "image": "https://picsum.photos/seed/music/400/300",
+        "date": "2026-08-20",
+        "location": "MumuLab音乐教室",
+        "category": "游玩",
+        "color": "#4ecdc4"
+    }
+]

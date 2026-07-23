@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}2026年暑假快乐 - MumuLab 活动列表{% endblock %}
+{% block content %}
+<div class="activity-list">
+    <h2 class="list-title">精彩活动</h2>
+    <div class="activities-grid">
+        {% for activity in activities %}
+        <a href="/activity/{{ activity.id }}" class="activity-card">
+            <img class="activity-card-img" src="{{ activity.image }}" alt="{{ activity.title }}">
+            <div class="activity-card-content">
+                <h3 class="activity-card-title">{{ activity.title }}</h3>
+                <p class="activity-card-desc">{{ activity.description[:50] }}{% if activity.description|length > 50 %}...{% endif %}</p>
+                <span class="activity-card-date">{{ activity.date }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
