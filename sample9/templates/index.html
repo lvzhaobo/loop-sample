@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄时钟-LOOP</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">番茄时钟</h1>
+        <div class="timer-display">
+            <div class="tomato-icon">
+                <svg viewBox="0 0 100 100" width="200" height="200">
+                    <circle cx="50" cy="50" r="45" fill="#FF6347" stroke="#DC143C" stroke-width="3"/>
+                    <path d="M50 5 Q55 20 50 25 Q45 20 50 5" fill="#228B22"/>
+                    <path d="M50 25 Q40 30 35 40 Q30 50 35 60 Q40 70 50 75 Q60 70 65 60 Q70 50 65 40 Q60 30 50 25" fill="#FF4500" opacity="0.3"/>
+                </svg>
+            </div>
+            <div class="time-remaining" id="timeDisplay">25:00</div>
+            <div class="phase-label" id="phaseLabel">工作时段</div>
+            <div class="loop-count">循环: <span id="loopCount">0</span></div>
+        </div>
+        <div class="controls">
+            <button id="startBtn" class="btn btn-start">开始</button>
+            <button id="pauseBtn" class="btn btn-pause" disabled>暂停</button>
+            <button id="resetBtn" class="btn btn-reset">重置</button>
+        </div>
+        <div class="footer-text">Loop-20260721</div>
+    </div>
+    <script src="/static/js/pomodoro.js"></script>
+</body>
+</html>

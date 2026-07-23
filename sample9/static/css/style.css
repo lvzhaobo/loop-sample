@@ -1,0 +1,126 @@
+/* 番茄时钟样式 - 白色背景，番茄红色调 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333333;
+}
+
+.container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #DC143C;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.timer-display {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.tomato-icon {
+    margin-bottom: 20px;
+}
+
+.time-remaining {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FF6347;
+    margin: 20px 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.phase-label {
+    font-size: 1.5rem;
+    color: #DC143C;
+    margin-bottom: 10px;
+}
+
+.loop-count {
+    font-size: 1.2rem;
+    color: #FF6347;
+    margin-top: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: 2px solid #FF6347;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    color: #FF6347;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #FF6347;
+    color: #ffffff;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #cccccc;
+    color: #cccccc;
+}
+
+.btn-start {
+    background-color: #FF6347;
+    color: #ffffff;
+}
+
+.btn-start:hover:not(:disabled) {
+    background-color: #DC143C;
+    border-color: #DC143C;
+}
+
+.btn-pause {
+    background-color: #ffffff;
+    color: #FF6347;
+}
+
+.btn-pause:hover:not(:disabled) {
+    background-color: #FF6347;
+    color: #ffffff;
+}
+
+.btn-reset {
+    background-color: #ffffff;
+    color: #FF6347;
+}
+
+.btn-reset:hover:not(:disabled) {
+    background-color: #FF6347;
+    color: #ffffff;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #DC143C;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
