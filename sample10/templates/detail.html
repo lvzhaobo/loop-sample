@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ course.title }} - 在线学习平台{% endblock %}
+{% block content %}
+<div class="course-body">
+    <h2>{{ course.title }}</h2>
+    <div class="course-info">
+        <p><strong>讲师：</strong>{{ course.instructor }}</p>
+        <p><strong>分类：</strong>{{ course.category }}</p>
+        <p><strong>时长：</strong>{{ course.duration }} 小时</p>
+        <p><strong>价格：</strong>
+            {% if course.price is defined and course.price is not none %}
+            ¥{{ "%.2f"|format(course.price) }}
+            {% else %}
+            免费
+            {% endif %}
+        </p>
+    </div>
+    <div class="course-description">
+        <h3>课程介绍</h3>
+        <p>{{ course.description }}</p>
+    </div>
+    <a href="/" class="btn-course">返回课程列表</a>
+</div>
+{% endblock %}

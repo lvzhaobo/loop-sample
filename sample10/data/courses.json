@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Python 编程入门",
+        "description": "本课程从零开始学习 Python 编程语言，涵盖基础语法、数据结构、函数、面向对象编程等核心内容，适合完全没有编程经验的初学者。通过大量实战练习，帮助学员快速掌握 Python 编程技能。",
+        "cover_image": "/static/img/course1.jpg",
+        "instructor": "张老师",
+        "duration": 20.5,
+        "category": "编程基础",
+        "price": 199.00
+    },
+    {
+        "id": 2,
+        "title": "Web 前端开发实战",
+        "description": "深入学习 HTML5、CSS3 和 JavaScript 等前端核心技术，掌握响应式布局、动画效果、DOM 操作等实用技能。课程包含多个真实项目案例，帮助学员构建完整的 Web 前端开发能力。",
+        "cover_image": "/static/img/course2.jpg",
+        "instructor": "李老师",
+        "duration": 35.0,
+        "category": "前端开发",
+        "price": 299.00
+    },
+    {
+        "id": 3,
+        "title": "数据结构与算法精讲",
+        "description": "系统讲解常见数据结构（数组、链表、栈、队列、树、图）和经典算法（排序、搜索、动态规划、贪心算法），配合 LeetCode 真题演练，全面提升编程思维和算法能力，助力技术面试。",
+        "cover_image": "/static/img/course3.jpg",
+        "instructor": "王老师",
+        "duration": 40.0,
+        "category": "算法",
+        "price": 399.00
+    },
+    {
+        "id": 4,
+        "title": "机器学习基础",
+        "description": "介绍机器学习的基本概念和常用算法，包括线性回归、逻辑回归、决策树、支持向量机、聚类等。使用 Python 和 scikit-learn 库进行实践，让学员掌握机器学习项目的完整流程。",
+        "cover_image": "/static/img/course4.jpg",
+        "instructor": "赵老师",
+        "duration": 30.0,
+        "category": "人工智能",
+        "price": 499.00
+    },
+    {
+        "id": 5,
+        "title": "数据库设计与 SQL 优化",
+        "description": "从关系数据库设计原理出发，深入讲解 SQL 查询优化、索引策略、事务管理、存储过程等高级主题。结合实际业务场景，培养学员设计高效数据库系统和编写高性能 SQL 的能力。",
+        "cover_image": "/static/img/course5.jpg",
+        "instructor": "陈老师",
+        "duration": 25.0,
+        "category": "数据库",
+        "price": 249.00
+    },
+    {
+        "id": 6,
+        "title": "Linux 系统管理与运维",
+        "description": "全面学习 Linux 操作系统管理，包括文件系统、用户权限、进程管理、网络配置、Shell 脚本编程、服务部署等核心技能。课程适合希望从事运维或 DevOps 工作的学员。",
+        "cover_image": "/static/img/course6.jpg",
+        "instructor": "刘老师",
+        "duration": 28.0,
+        "category": "运维",
+        "price": 349.00
+    },
+    {
+        "id": 7,
+        "title": "深度学习与神经网络",
+        "description": "深入讲解深度学习原理，涵盖卷积神经网络、循环神经网络、Transformer 等主流架构。使用 TensorFlow 和 PyTorch 框架进行实战，完成图像分类、自然语言处理等经典项目。",
+        "cover_image": "/static/img/course7.jpg",
+        "instructor": "孙老师",
+        "duration": 45.0,
+        "category": "人工智能",
+        "price": 599.00
+    },
+    {
+        "id": 8,
+        "title": "软件工程与项目管理",
+        "description": "系统学习软件开发生命周期、需求分析、架构设计、敏捷开发、版本控制、持续集成等软件工程核心知识。通过模拟项目实践，培养学员的团队协作和项目管理能力。",
+        "cover_image": "/static/img/course8.jpg",
+        "instructor": "周老师",
+        "duration": 22.0,
+        "category": "软件工程",
+        "price": 279.00
+    }
+]

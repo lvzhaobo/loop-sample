@@ -1,0 +1,12 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5060
+ * Running on http://172.16.180.254:5060
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2026 11:57:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2026 11:57:43] "GET /api/courses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2026 11:57:43] "[33mGET /api/courses/9999 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2026 11:57:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2026 11:57:43] "GET /course/1 HTTP/1.1" 200 -
