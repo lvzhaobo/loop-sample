@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}任务列表 - 复刻Jira系统{% endblock %}
+{% block content %}
+<h2>任务列表</h2>
+<div class="card-list">
+    {% for item in items %}
+    <div class="jira-card">
+        <h3 class="jira-card-title"><a href="/fs_009_item/{{ item.id }}">{{ item.title }}</a></h3>
+        <p class="jira-card-status">状态：{{ item.status }}</p>
+        <p class="jira-card-priority">优先级：{{ item.priority }}</p>
+        <p class="jira-card-assignee">负责人：{{ item.get('assignee', '未指派') }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

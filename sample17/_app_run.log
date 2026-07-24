@@ -1,0 +1,17 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+2026-07-24 08:59:05,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5060
+ * Running on http://172.16.180.254:5060
+2026-07-24 08:59:05,616 - INFO - [33mPress CTRL+C to quit[0m
+2026-07-24 08:59:05,792 - INFO - 成功加载 8 条fs_009_item
+2026-07-24 08:59:05,797 - INFO - 127.0.0.1 - - [24/Jul/2026 08:59:05] "GET / HTTP/1.1" 200 -
+2026-07-24 08:59:05,799 - INFO - 成功加载 8 条fs_009_item
+2026-07-24 08:59:05,799 - INFO - 127.0.0.1 - - [24/Jul/2026 08:59:05] "GET /api/fs_009_items HTTP/1.1" 200 -
+2026-07-24 08:59:05,801 - INFO - 成功加载 8 条fs_009_item
+2026-07-24 08:59:05,801 - INFO - 127.0.0.1 - - [24/Jul/2026 08:59:05] "[33mGET /api/fs_009_items/9999 HTTP/1.1[0m" 404 -
+2026-07-24 08:59:05,802 - INFO - 成功加载 8 条fs_009_item
+2026-07-24 08:59:05,802 - INFO - 127.0.0.1 - - [24/Jul/2026 08:59:05] "GET / HTTP/1.1" 200 -
+2026-07-24 08:59:05,804 - INFO - 成功加载 8 条fs_009_item
+2026-07-24 08:59:05,806 - INFO - 127.0.0.1 - - [24/Jul/2026 08:59:05] "GET /fs_009_item/1 HTTP/1.1" 200 -

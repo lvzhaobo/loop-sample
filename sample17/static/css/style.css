@@ -1,0 +1,127 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #0747a6;
+    color: #fff;
+    padding: 16px 24px;
+}
+
+.site-header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* 卡片列表 */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.jira-card {
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.333% - 16px);
+    min-width: 280px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s;
+}
+
+.jira-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.jira-card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.jira-card-title a {
+    color: #0747a6;
+    text-decoration: none;
+}
+
+.jira-card-title a:hover {
+    text-decoration: underline;
+}
+
+.jira-card-status,
+.jira-card-priority,
+.jira-card-assignee {
+    font-size: 14px;
+    color: #5e6c84;
+    margin-bottom: 4px;
+}
+
+/* 详情页 */
+.detail-container {
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.jira-detail-body p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.cover-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.btn-jira {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.btn-jira:hover {
+    background-color: #27ae60;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 16px;
+    color: #5e6c84;
+    font-size: 14px;
+    border-top: 1px solid #dfe1e6;
+    margin-top: 40px;
+}

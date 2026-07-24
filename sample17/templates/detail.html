@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}任务详情 - 复刻Jira系统{% endblock %}
+{% block content %}
+{% if item %}
+<div class="detail-container">
+    <h2>{{ item.title }}</h2>
+    <div class="jira-detail-body">
+        <p><strong>ID：</strong>{{ item.id }}</p>
+        <p><strong>描述：</strong>{{ item.description }}</p>
+        <p><strong>状态：</strong>{{ item.status }}</p>
+        <p><strong>优先级：</strong>{{ item.priority }}</p>
+        <p><strong>负责人：</strong>{{ item.get('assignee', '未指派') }}</p>
+        <p><strong>创建时间：</strong>{{ item.created_at }}</p>
+        {% if item.cover_image %}
+        <p><strong>封面图片：</strong><img src="{{ item.cover_image }}" alt="封面" class="cover-image"></p>
+        {% endif %}
+    </div>
+    <a href="/" class="btn-jira">返回列表</a>
+</div>
+{% else %}
+<div class="detail-container">
+    <h2>任务未找到</h2>
+    <p>抱歉，您访问的任务不存在。</p>
+    <a href="/" class="btn-jira">返回列表</a>
+</div>
+{% endif %}
+{% endblock %}
