@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira 复刻版</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="light-theme">
+    <!-- 顶部导航栏 -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="logo">Jira 复刻版</div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link" data-page="dashboard">仪表盘</a>
+                <a href="#" class="nav-link" data-page="projects">项目</a>
+                <a href="#" class="nav-link" data-page="issues">问题</a>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-btn" title="切换主题">🌓</button>
+            <div class="user-avatar" id="user-avatar" title="用户头像">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%230052CC'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='white' font-size='16' font-family='Arial'%3EU%3C/text%3E%3C/svg%3E" alt="用户头像">
+            </div>
+        </div>
+    </header>
+
+    <!-- 用户详情弹窗 -->
+    <div id="user-detail-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div class="user-detail-info">
+                <div class="user-detail-avatar">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230052CC'/%3E%3Ctext x='32' y='42' text-anchor='middle' fill='white' font-size='32' font-family='Arial'%3EU%3C/text%3E%3C/svg%3E" alt="用户头像">
+                </div>
+                <h2 id="user-name">用户名称</h2>
+                <p id="user-email">user@example.com</p>
+                <p id="user-role">角色</p>
+                <p id="user-department">部门</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主内容区 -->
+    <div class="main-container">
+        <!-- 左侧菜单 -->
+        <aside class="sidebar" id="sidebar">
+            <ul class="menu-list" id="menu-list">
+                <!-- 由 JS 动态渲染 -->
+            </ul>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <main class="content-area" id="content-area">
+            <!-- 默认显示看板视图 -->
+            <div id="kanban-view" class="page-view">
+                <h2>看板 (Kanban)</h2>
+                <div class="kanban-board" id="kanban-board">
+                    <!-- 由 JS 动态渲染 -->
+                </div>
+            </div>
+            <!-- 其他页面视图 -->
+            <div id="dashboard-view" class="page-view hidden">
+                <h2>仪表盘</h2>
+                <p>欢迎使用 Jira 复刻版！这里是您的项目概览。</p>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3>进行中的任务</h3>
+                        <p class="stat-number">12</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>待处理问题</h3>
+                        <p class="stat-number">8</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>已完成本周</h3>
+                        <p class="stat-number">23</p>
+                    </div>
+                </div>
+            </div>
+            <div id="projects-view" class="page-view hidden">
+                <h2>项目列表</h2>
+                <div class="project-list">
+                    <div class="project-card">
+                        <h3>项目 Alpha</h3>
+                        <p>状态: 进行中</p>
+                        <p>负责人: 张三</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>项目 Beta</h3>
+                        <p>状态: 规划中</p>
+                        <p>负责人: 李四</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>项目 Gamma</h3>
+                        <p>状态: 已完成</p>
+                        <p>负责人: 王五</p>
+                    </div>
+                </div>
+            </div>
+            <div id="issues-view" class="page-view hidden">
+                <h2>问题列表</h2>
+                <table class="issues-table">
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>标题</th>
+                            <th>状态</th>
+                            <th>优先级</th>
+                            <th>负责人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>JIRA-101</td><td>登录页面样式调整</td><td>进行中</td><td>高</td><td>张三</td></tr>
+                        <tr><td>JIRA-102</td><td>API 接口优化</td><td>待处理</td><td>中</td><td>李四</td></tr>
+                        <tr><td>JIRA-103</td><td>数据库备份脚本</td><td>已完成</td><td>低</td><td>王五</td></tr>
+                        <tr><td>JIRA-104</td><td>用户权限管理</td><td>进行中</td><td>高</td><td>赵六</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/jira.js"></script>
+</body>
+</html>
